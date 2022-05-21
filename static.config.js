@@ -29,6 +29,10 @@ export default {
         }))
       },
       {
+        path: "/list",
+        component: "src/containers/List"
+      },
+      {
         is404: true,
         component: "src/containers/404"
       }
