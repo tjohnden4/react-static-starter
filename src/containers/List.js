@@ -30,7 +30,7 @@ const columns = [
   }
 ]
 
-function List() {
+export var render = function() {
   return (
     <div className="App">
       <Card>
@@ -47,5 +47,3 @@ function List() {
     </div>
   )
 }
-
-export List
