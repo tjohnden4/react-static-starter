@@ -36,7 +36,7 @@ export default () => (
       <DataTable
         title="Movies"
         columns={columns}
-        data={movies}
+        data={Movies}
         defaultSortFieldId={1}
         sortIcon={<SortIcon />}
         pagination
