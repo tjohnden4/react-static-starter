@@ -30,8 +30,7 @@ const columns = [
   }
 ]
 
-export var render = function() {
-  return (
+export default () => ( 
     <div className="App">
       <Card>
         <DataTable
@@ -45,5 +44,4 @@ export var render = function() {
         />
       </Card>
     </div>
-  )
-}
+)
