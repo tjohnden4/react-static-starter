@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import DataTable from 'react-data-table-component'
 import Card from '@material-ui/core/Card'
 import SortIcon from '@material-ui/icons/ArrowDownward'
-import movies from './movies'
+import Movies from './movies'
 
 const columns = [
   {
