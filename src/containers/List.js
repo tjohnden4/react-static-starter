@@ -30,7 +30,7 @@ const columns = [
   }
 ]
 
-function MoviesList() {
+function List() {
   return (
     <div className="App">
       <Card>
@@ -48,4 +48,4 @@ function MoviesList() {
   )
 }
 
-export default MoviesList
+export List
