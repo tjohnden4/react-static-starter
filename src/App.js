@@ -17,6 +17,7 @@ export default () => (
       <div className="content">
         <Routes />
       </div>
+      	<div id="root"></div>
     </div>
   </Router>
 )
