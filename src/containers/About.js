@@ -1,20 +1,9 @@
-// import React from 'react'
-//
-//
-// export default () => (
-//   <div>
-//     <h1>This is what we're all about.</h1>
-//     <p>React, static sites, performance, speed. It's the stuff that makes us tick.</p>
-//   </div>
-// )
-
-import React from "react";
+import React from 'react'
 import ReactDOM from "react-dom";
 import DataTable from "react-data-table-component";
 import Card from "@material-ui/core/Card";
 import SortIcon from "@material-ui/icons/ArrowDownward";
 import movies from "./movies";
-import "./styles.css";
 
 const columns = [
   {
@@ -41,23 +30,26 @@ const columns = [
   }
 ];
 
-function App() {
-  return (
-    <div className="App">
-      <Card>
-        <DataTable
-          title="Movies"
-          columns={columns}
-          data={movies}
-          defaultSortFieldId={1}
-          sortIcon={<SortIcon />}
-          pagination
-          selectableRows
-        />
-      </Card>
-    </div>
-  );
-}
+return (
+  <div className="table">
+    <Card>
+      <DataTable
+        title="Movies"
+        columns={columns}
+        data={movies}
+        defaultSortFieldId={1}
+        sortIcon={<SortIcon />}
+        pagination
+        selectableRows
+      />
+    </Card>
+  </div>
+);
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+export default () => (
+  <div>
+    <h1>This is what we're all about.</h1>
+    <p>React, static sites, performance, speed. It's the stuff that makes us tick.</p>
+  </div>
+	<div id="table"></div>
+)
