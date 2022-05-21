@@ -12,6 +12,7 @@ export default () => (
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/blog">Blog</Link>
+        <Link to="/list">Movies</Link>
       </nav>
       <div className="content">
         <Routes />
